@@ -1,3 +1,4 @@
+# The function has a loop that iterates over all the input and make the calculations as required in the assignment
 def part1(input):
     paper_sqrmt = 0
 
@@ -8,6 +9,7 @@ def part1(input):
 
     return paper_sqrmt
 
+# Same as the first part but it adds some extra calculation that require to take the 2 smaller measures of each box
 def part2(input):
     ribbon_sqrmt = 0
 
@@ -15,7 +17,6 @@ def part2(input):
         measures = [int(i) for i in box.split("x")]
         ribbon_sqrmt += (measures[0]*measures[1]*measures[2])
         measures.sort()
-        print(measures)
         ribbon_sqrmt += measures[0] + measures[0] + measures[1] + measures[1]
 
     return ribbon_sqrmt

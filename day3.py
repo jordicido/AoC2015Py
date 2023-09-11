@@ -10,6 +10,9 @@ def update_position(position, signal):
 
     return position
 
+# In this first part we are asked, given a set of instructions, how many positions are visited in an
+# infinite two dimensional array. In this case I use a two position integer array to control the actual
+# position and a set of arrays to control the uniqueness of the positions visited
 def part1(input):
     point = [0,0]
     houses = set()
@@ -21,6 +24,7 @@ def part1(input):
         
     return len(houses)
 
+# Same idea of the previous part but in this case we add a second position that is traversing the array
 def part2(input):
     point_santa = [0,0]
     point_robot = [0,0]

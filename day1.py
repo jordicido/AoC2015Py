@@ -1,3 +1,5 @@
+# The function has a loop that iterates over all the input and add 1 
+# to counter if it finds a "(" and remove 1 from counter if it finds a ")"
 def part1(input):
     counter = 0
 
@@ -9,6 +11,9 @@ def part1(input):
 
     return counter
 
+# In this case we want to do the same but we add a little complexity,
+# we have to control when the floor first gets to basement (value = -1)
+# and return the position when it first arrived
 def part2(input):
     position = 0
     floor = 0
